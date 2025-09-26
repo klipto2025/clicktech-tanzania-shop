@@ -3,99 +3,95 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CLICKTECH SOLUTION Design System - Futuristic Cyberpunk Tech */
+/* CLICKTECH SOLUTION Design System - Professional Tech E-commerce */
 
 @layer base {
   :root {
-    /* Futuristic Base Colors */
-    --background: 220 27% 4%;
-    --foreground: 210 100% 98%;
+    /* Core Brand Colors - Tech Green Theme */
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
     
-    /* Neon Cyan Primary */
-    --primary: 195 100% 50%;
-    --primary-foreground: 220 27% 4%;
-    --primary-hover: 195 100% 45%;
-    --primary-glow: 195 100% 70%;
+    /* Tech Green Primary */
+    --primary: 142 76% 36%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 142 76% 32%;
     
-    /* Electric Purple Secondary */
-    --secondary: 260 100% 12%;
-    --secondary-foreground: 270 100% 85%;
+    /* Professional Secondary */
+    --secondary: 220 13% 91%;
+    --secondary-foreground: 220 13% 18%;
     
-    /* Dark Glass Cards */
-    --card: 220 27% 6%;
-    --card-foreground: 210 100% 95%;
+    /* Clean Cards */
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 18%;
     
-    /* Neon Accents */
-    --accent: 195 100% 8%;
-    --accent-foreground: 195 100% 70%;
+    /* Subtle Accents */
+    --accent: 142 30% 95%;
+    --accent-foreground: 142 76% 36%;
     
-    /* Muted Futuristic */
-    --muted: 220 27% 8%;
-    --muted-foreground: 210 20% 60%;
+    /* Professional Muted */
+    --muted: 220 13% 95%;
+    --muted-foreground: 220 9% 46%;
     
-    /* Glowing Borders */
-    --border: 220 27% 15%;
-    --input: 220 27% 10%;
-    --ring: 195 100% 50%;
+    /* Borders & Inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 142 76% 36%;
     
     /* Status Colors */
-    --destructive: 0 85% 60%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
     /* Popover */
-    --popover: 220 27% 8%;
-    --popover-foreground: 210 100% 95%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
     
     /* Design Tokens */
-    --radius: 1rem;
+    --radius: 0.75rem;
     
-    /* Futuristic Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(195, 100%, 50%), hsl(270, 100%, 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(270, 100%, 60%), hsl(195, 100%, 50%));
-    --gradient-dark: linear-gradient(135deg, hsl(220, 27%, 4%), hsl(220, 27%, 8%));
-    --gradient-cyber: linear-gradient(135deg, hsl(195, 100%, 50%) 0%, hsl(270, 100%, 60%) 50%, hsl(330, 100%, 60%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(220, 27%, 6%), hsl(220, 27%, 4%));
-    --gradient-glow: radial-gradient(ellipse at center, hsl(195, 100%, 50%, 0.3) 0%, transparent 70%);
+    /* Tech Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(142, 76%, 36%), hsl(142, 76%, 42%));
+    --gradient-dark: linear-gradient(135deg, hsl(220, 13%, 18%), hsl(220, 13%, 25%));
+    --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(220, 13%, 98%));
     
-    /* Cyberpunk Shadows & Glows */
-    --shadow-card: 0 8px 32px hsla(195, 100%, 50%, 0.15);
-    --shadow-hover: 0 16px 64px hsla(195, 100%, 50%, 0.25);
-    --shadow-primary: 0 0 30px hsla(195, 100%, 50%, 0.6);
-    --shadow-neon: 0 0 20px hsla(195, 100%, 50%, 0.8), 0 0 40px hsla(195, 100%, 50%, 0.4);
-    --shadow-purple: 0 0 30px hsla(270, 100%, 60%, 0.6);
+    /* Professional Shadows */
+    --shadow-card: 0 4px 12px hsla(220, 13%, 18%, 0.08);
+    --shadow-hover: 0 8px 24px hsla(220, 13%, 18%, 0.12);
+    --shadow-primary: 0 4px 16px hsla(142, 76%, 36%, 0.24);
     
-    /* Advanced Transitions */
-    --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-    --transition-glow: all 0.3s ease-out;
+    /* Smooth Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    /* Enhanced Dark Mode */
-    --background: 220 27% 2%;
-    --foreground: 210 100% 98%;
+    /* Dark Theme for Tech Professional Look */
+    --background: 220 13% 9%;
+    --foreground: 0 0% 95%;
     
-    --card: 220 27% 4%;
-    --card-foreground: 210 100% 95%;
+    --card: 220 13% 12%;
+    --card-foreground: 0 0% 95%;
     
-    --primary: 195 100% 55%;
-    --primary-foreground: 220 27% 2%;
-    --primary-hover: 195 100% 50%;
+    --primary: 142 76% 42%;
+    --primary-foreground: 220 13% 9%;
+    --primary-hover: 142 76% 38%;
     
-    --secondary: 260 100% 8%;
-    --secondary-foreground: 270 100% 90%;
+    --secondary: 220 13% 15%;
+    --secondary-foreground: 0 0% 95%;
     
-    --accent: 195 100% 6%;
-    --accent-foreground: 195 100% 75%;
+    --accent: 142 30% 15%;
+    --accent-foreground: 142 76% 42%;
     
-    --muted: 220 27% 6%;
-    --muted-foreground: 210 20% 65%;
+    --muted: 220 13% 15%;
+    --muted-foreground: 220 9% 65%;
     
-    --border: 220 27% 12%;
-    --input: 220 27% 8%;
-    --ring: 195 100% 55%;
+    --border: 220 13% 18%;
+    --input: 220 13% 18%;
+    --ring: 142 76% 42%;
     
-    --popover: 220 27% 6%;
-    --popover-foreground: 210 100% 95%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --popover: 220 13% 12%;
+    --popover-foreground: 0 0% 95%;
   }
 }
 
@@ -107,59 +103,22 @@
   body {
     @apply bg-background text-foreground font-sans;
     font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, hsl(220, 27%, 4%) 0%, hsl(220, 27%, 6%) 100%);
   }
 
-  /* Futuristic animations */
+  /* Professional animations */
   .animate-fade-up {
-    animation: fadeUp 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    animation: fadeUp 0.6s ease-out;
   }
 
   .animate-scale-in {
-    animation: scaleIn 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .animate-glow {
-    animation: glow 2s ease-in-out infinite alternate;
-  }
-
-  .animate-pulse-neon {
-    animation: pulseNeon 3s ease-in-out infinite;
-  }
-
-  .animate-float {
-    animation: float 6s ease-in-out infinite;
-  }
-
-  /* Cyberpunk glow effects */
-  .glow-border {
-    position: relative;
-  }
-
-  .glow-border::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    padding: 2px;
-    background: var(--gradient-cyber);
-    border-radius: inherit;
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask-composite: xor;
-    -webkit-mask-composite: xor;
-  }
-
-  .text-cyber {
-    background: var(--gradient-cyber);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    animation: scaleIn 0.4s ease-out;
   }
 }
 
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -170,37 +129,10 @@
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: scale(0.9);
+    transform: scale(0.95);
   }
   to {
     opacity: 1;
     transform: scale(1);
-  }
-}
-
-@keyframes glow {
-  from {
-    box-shadow: var(--shadow-primary);
-  }
-  to {
-    box-shadow: var(--shadow-neon);
-  }
-}
-
-@keyframes pulseNeon {
-  0%, 100% {
-    box-shadow: 0 0 20px hsl(195, 100%, 50%, 0.3);
-  }
-  50% {
-    box-shadow: 0 0 40px hsl(195, 100%, 50%, 0.8), 0 0 60px hsl(195, 100%, 50%, 0.4);
-  }
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
   }
 }

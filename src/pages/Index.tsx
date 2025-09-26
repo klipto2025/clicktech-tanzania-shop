@@ -22,118 +22,100 @@ const Index = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-glow opacity-20"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-          <div className="absolute bottom-20 right-20 w-48 h-48 bg-purple-500/20 rounded-full blur-3xl animate-float" style={{animationDelay: '2s'}}></div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20 lg:py-32">
+      <section className="relative bg-gradient-subtle overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-16 lg:py-24">
             <div className="space-y-8 animate-fade-up">
-              <div className="space-y-6">
-                <Badge variant="outline" className="bg-primary/10 text-primary border-primary/30 glow-border animate-pulse-neon">
-                  🇹🇿 Tanzania's Future Tech Partner
+              <div className="space-y-4">
+                <Badge variant="outline" className="bg-primary/10 text-primary border-primary/20">
+                  🇹🇿 Tanzania's Trusted IT Partner
                 </Badge>
-                <h1 className="text-5xl lg:text-7xl font-black leading-tight">
-                  Next-Gen 
-                  <span className="text-cyber block"> Cyber Tech</span>
-                  Solutions
+                <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+                  Professional 
+                  <span className="bg-gradient-primary bg-clip-text text-transparent"> IT Equipment</span>
+                  <br />
+                  for Your Business
                 </h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  Cutting-edge laptops, quantum-ready desktops, and futuristic IT accessories. 
-                  Powering the digital revolution in Dar es Salaam with advanced tech solutions.
+                  Quality laptops, desktop computers, and IT accessories with warranty guarantee. 
+                  Serving Sinza and greater Dar es Salaam with professional tech solutions.
                 </p>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="cyber" size="lg" asChild>
+                <Button variant="hero" size="lg" asChild>
                   <NavLink to="/laptops">
-                    Enter Cyber Zone
+                    Shop Laptops
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </NavLink>
                 </Button>
-                <Button variant="neon" size="lg" asChild>
+                <Button variant="outline" size="lg" asChild>
                   <NavLink to="/contact">
-                    Request Neural Link
+                    Get Quote
                   </NavLink>
                 </Button>
               </div>
 
               {/* Trust Indicators */}
-              <div className="flex items-center space-x-8 pt-6">
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 rounded-full bg-primary/20 animate-pulse-neon">
-                    <Shield className="h-5 w-5 text-primary" />
-                  </div>
-                  <span className="text-sm font-bold">Quantum Warranty</span>
+              <div className="flex items-center space-x-6 pt-4">
+                <div className="flex items-center space-x-2">
+                  <Shield className="h-5 w-5 text-primary" />
+                  <span className="text-sm font-medium">1 Year Warranty</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 rounded-full bg-primary/20 animate-pulse-neon" style={{animationDelay: '1s'}}>
-                    <Truck className="h-5 w-5 text-primary" />
-                  </div>
-                  <span className="text-sm font-bold">Hyper Delivery</span>
+                <div className="flex items-center space-x-2">
+                  <Truck className="h-5 w-5 text-primary" />
+                  <span className="text-sm font-medium">Free Delivery</span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <div className="p-2 rounded-full bg-primary/20 animate-pulse-neon" style={{animationDelay: '2s'}}>
-                    <HeadphonesIcon className="h-5 w-5 text-primary" />
-                  </div>
-                  <span className="text-sm font-bold">AI Support</span>
+                <div className="flex items-center space-x-2">
+                  <HeadphonesIcon className="h-5 w-5 text-primary" />
+                  <span className="text-sm font-medium">Fast Support</span>
                 </div>
               </div>
             </div>
 
             <div className="relative animate-scale-in">
-              <div className="absolute inset-0 bg-gradient-cyber/30 rounded-3xl blur-xl animate-glow"></div>
               <img
                 src={heroImage}
-                alt="Futuristic IT Equipment - Next-Gen Computing"
-                className="relative w-full h-auto rounded-3xl shadow-neon border-2 border-primary/30 glow-border"
+                alt="Professional IT Equipment - Laptops and Computers"
+                className="w-full h-auto rounded-2xl shadow-hover"
               />
-              <div className="absolute inset-0 bg-gradient-cyber/20 rounded-3xl mix-blend-overlay"></div>
+              <div className="absolute inset-0 bg-gradient-primary/10 rounded-2xl"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Featured Products */}
-      <section className="py-20 lg:py-32 relative">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/4 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl animate-float"></div>
-          <div className="absolute bottom-0 right-1/4 w-40 h-40 bg-primary/10 rounded-full blur-2xl animate-float" style={{animationDelay: '3s'}}></div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 mb-16">
-            <Badge variant="outline" className="bg-accent/20 border-primary/30 glow-border animate-pulse-neon">
-              Neural Network Selection
+      <section className="py-16 lg:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-12">
+            <Badge variant="outline" className="bg-accent/50">
+              Featured Products
             </Badge>
-            <h2 className="text-4xl lg:text-6xl font-black">
-              Elite <span className="text-cyber">Cyber Arsenal</span>
+            <h2 className="text-3xl lg:text-4xl font-bold">
+              Premium <span className="text-primary">IT Solutions</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Handpicked quantum-enhanced devices and cybernetic accessories from the most advanced 
-              tech manufacturers. Experience the future of computing today.
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Discover our carefully selected range of professional-grade laptops, 
+              desktop computers, and accessories from trusted brands.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {featuredProducts.map((product, index) => (
-              <div key={product.id} className="animate-fade-up" style={{animationDelay: `${index * 0.2}s`}}>
-                <ProductCard
-                  product={product}
-                  onAddToCart={handleAddToCart}
-                  onViewDetails={handleViewDetails}
-                />
-              </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {featuredProducts.map((product) => (
+              <ProductCard
+                key={product.id}
+                product={product}
+                onAddToCart={handleAddToCart}
+                onViewDetails={handleViewDetails}
+              />
             ))}
           </div>
 
-          <div className="text-center mt-16">
-            <Button variant="cyber" size="lg" asChild>
+          <div className="text-center mt-12">
+            <Button variant="professional" size="lg" asChild>
               <NavLink to="/laptops">
-                Access Full Arsenal
+                View All Products
                 <ArrowRight className="ml-2 h-5 w-5" />
               </NavLink>
             </Button>
@@ -142,78 +124,55 @@ const Index = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 lg:py-32 relative">
-        <div className="absolute inset-0 bg-gradient-dark/50"></div>
-        <div className="absolute inset-0">
-          <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-          <div className="absolute top-1/4 right-0 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl"></div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-6 mb-16">
-            <h2 className="text-4xl lg:text-6xl font-black">
-              Why Join the <span className="text-cyber">Cyber Revolution?</span>
+      <section className="py-16 lg:py-24 bg-accent/30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center space-y-4 mb-12">
+            <h2 className="text-3xl lg:text-4xl font-bold">
+              Why Choose <span className="text-primary">CLICKTECH SOLUTION?</span>
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Your gateway to the future of technology in Tanzania. Experience next-level service 
-              and quantum-grade quality assurance.
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Your trusted IT partner in Tanzania with professional service and quality guarantee.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center space-y-6 animate-fade-up group">
-              <div className="relative mx-auto">
-                <div className="w-20 h-20 bg-gradient-cyber rounded-2xl flex items-center justify-center mx-auto animate-pulse-neon group-hover:animate-glow transition-all duration-500">
-                  <Shield className="h-10 w-10 text-white" />
-                </div>
-                <div className="absolute inset-0 bg-gradient-cyber/30 rounded-2xl blur-xl animate-glow"></div>
+            <div className="text-center space-y-4 animate-fade-up">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto">
+                <Shield className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-black">Quantum Guarantee</h3>
+              <h3 className="text-xl font-semibold">Quality Guarantee</h3>
               <p className="text-muted-foreground">
-                All products backed by advanced warranty protocols and quantum-level quality assurance 
-                from elite manufacturers.
+                All products come with comprehensive warranty and quality assurance from trusted brands.
               </p>
             </div>
 
-            <div className="text-center space-y-6 animate-fade-up group" style={{animationDelay: '0.2s'}}>
-              <div className="relative mx-auto">
-                <div className="w-20 h-20 bg-gradient-cyber rounded-2xl flex items-center justify-center mx-auto animate-pulse-neon group-hover:animate-glow transition-all duration-500">
-                  <Star className="h-10 w-10 text-white" />
-                </div>
-                <div className="absolute inset-0 bg-gradient-cyber/30 rounded-2xl blur-xl animate-glow"></div>
+            <div className="text-center space-y-4 animate-fade-up">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto">
+                <Star className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-black">Neural Service</h3>
+              <h3 className="text-xl font-semibold">Professional Service</h3>
               <p className="text-muted-foreground">
-                AI-powered consultation and cybernetic installation services for all your 
-                futuristic IT requirements.
+                Expert advice and professional installation services for all your IT needs.
               </p>
             </div>
 
-            <div className="text-center space-y-6 animate-fade-up group" style={{animationDelay: '0.4s'}}>
-              <div className="relative mx-auto">
-                <div className="w-20 h-20 bg-gradient-cyber rounded-2xl flex items-center justify-center mx-auto animate-pulse-neon group-hover:animate-glow transition-all duration-500">
-                  <Truck className="h-10 w-10 text-white" />
-                </div>
-                <div className="absolute inset-0 bg-gradient-cyber/30 rounded-2xl blur-xl animate-glow"></div>
+            <div className="text-center space-y-4 animate-fade-up">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto">
+                <Truck className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-black">Hyper Delivery</h3>
+              <h3 className="text-xl font-semibold">Fast Delivery</h3>
               <p className="text-muted-foreground">
-                Lightning-fast quantum transport within Dar es Salaam with secure 
-                teleportation delivery protocols.
+                Free delivery within Dar es Salaam with quick and secure shipping options.
               </p>
             </div>
 
-            <div className="text-center space-y-6 animate-fade-up group" style={{animationDelay: '0.6s'}}>
-              <div className="relative mx-auto">
-                <div className="w-20 h-20 bg-gradient-cyber rounded-2xl flex items-center justify-center mx-auto animate-pulse-neon group-hover:animate-glow transition-all duration-500">
-                  <HeadphonesIcon className="h-10 w-10 text-white" />
-                </div>
-                <div className="absolute inset-0 bg-gradient-cyber/30 rounded-2xl blur-xl animate-glow"></div>
+            <div className="text-center space-y-4 animate-fade-up">
+              <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto">
+                <HeadphonesIcon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-2xl font-black">AI Support Matrix</h3>
+              <h3 className="text-xl font-semibold">24/7 Support</h3>
               <p className="text-muted-foreground">
-                24/7 neural network support system to assist with any technical anomalies 
-                or cybernetic malfunctions.
+                Dedicated customer support to help you with any questions or technical issues.
               </p>
             </div>
           </div>
@@ -221,30 +180,24 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 lg:py-32 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-dark"></div>
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-cyber/10 animate-pulse-neon"></div>
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-glow opacity-30"></div>
-        </div>
-        
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-8">
-            <h2 className="text-5xl lg:text-7xl font-black text-white">
-              Ready to <span className="text-cyber">Hack Reality?</span>
+      <section className="py-16 lg:py-24 bg-gradient-dark text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl lg:text-4xl font-bold">
+              Ready to Upgrade Your IT Setup?
             </h2>
-            <p className="text-2xl text-gray-300 max-w-4xl mx-auto">
-              Connect with our cyber specialists for quantum-level consultations and neural pricing 
-              on next-generation IT arsenals.
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+              Contact our experts for personalized recommendations and competitive pricing 
+              on premium IT equipment.
             </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
-              <Button variant="cyber" size="lg" asChild>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="hero" size="lg" asChild>
                 <NavLink to="/contact">
-                  Initialize Connection
+                  Get Free Consultation
                 </NavLink>
               </Button>
-              <Button variant="glass" size="lg" className="text-white border-white/30 hover:border-white/60">
-                Neural Link: +255 123 456 789
+              <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-gray-900">
+                Call Now: +255 123 456 789
               </Button>
             </div>
           </div>
