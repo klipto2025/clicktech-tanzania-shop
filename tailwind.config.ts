@@ -88,11 +88,16 @@ export default {
         'card': 'var(--shadow-card)',
         'hover': 'var(--shadow-hover)', 
         'primary': 'var(--shadow-primary)',
+        'neon': 'var(--shadow-neon)',
+        'purple': 'var(--shadow-purple)',
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
+        'gradient-secondary': 'var(--gradient-secondary)', 
         'gradient-dark': 'var(--gradient-dark)',
+        'gradient-cyber': 'var(--gradient-cyber)',
         'gradient-subtle': 'var(--gradient-subtle)',
+        'gradient-glow': 'var(--gradient-glow)',
       },
       transitionTimingFunction: {
         'smooth': 'cubic-bezier(0.4, 0, 0.2, 1)',

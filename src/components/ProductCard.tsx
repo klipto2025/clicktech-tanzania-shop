@@ -17,39 +17,41 @@ const ProductCard: React.FC<ProductCardProps> = ({
   onViewDetails 
 }) => {
   return (
-    <Card className="group hover:shadow-hover transition-smooth animate-fade-up">
+    <Card className="group hover:shadow-neon transition-smooth animate-fade-up bg-card/80 backdrop-blur-md border-2 border-primary/20 hover:border-primary/50 glow-border">
       <CardHeader className="p-0">
-        <div className="relative overflow-hidden rounded-t-lg">
+        <div className="relative overflow-hidden rounded-t-xl">
+          <div className="absolute inset-0 bg-gradient-cyber/20 z-10 opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-48 object-cover group-hover:scale-105 transition-smooth"
+            className="w-full h-48 object-cover group-hover:scale-110 transition-all duration-500"
           />
           {product.featured && (
-            <Badge className="absolute top-3 left-3 bg-primary text-primary-foreground">
-              Featured
+            <Badge className="absolute top-4 left-4 bg-gradient-cyber text-white border-0 z-20 animate-pulse-neon font-bold">
+              Neural Elite
             </Badge>
           )}
           {!product.inStock && (
-            <Badge variant="destructive" className="absolute top-3 right-3">
-              Out of Stock
+            <Badge variant="destructive" className="absolute top-4 right-4 z-20 font-bold">
+              Offline
             </Badge>
           )}
+          <div className="absolute inset-0 bg-gradient-cyber/10 group-hover:bg-gradient-cyber/30 transition-all duration-500 z-10"></div>
         </div>
       </CardHeader>
 
-      <CardContent className="p-4">
-        <div className="space-y-2">
+      <CardContent className="p-6">
+        <div className="space-y-4">
           <div className="flex items-center justify-between">
-            <Badge variant="outline" className="text-xs">
+            <Badge variant="outline" className="text-xs border-primary/30 text-primary bg-primary/10 font-bold">
               {product.brand}
             </Badge>
-            <span className="text-sm text-muted-foreground">{product.category}</span>
+            <span className="text-sm text-primary font-bold capitalize">{product.category}</span>
           </div>
           
-          <h3 className="font-semibold text-lg leading-tight">{product.name}</h3>
+          <h3 className="font-black text-xl leading-tight text-cyber">{product.name}</h3>
           
-          <p className="text-sm text-muted-foreground line-clamp-2">
+          <p className="text-sm text-muted-foreground line-clamp-2 leading-relaxed">
             {product.description}
           </p>
 
@@ -71,14 +73,14 @@ const ProductCard: React.FC<ProductCardProps> = ({
             )}
           </div>
 
-          <div className="pt-2">
+          <div className="pt-4">
             <div className="flex items-center justify-between">
               <div>
-                <span className="text-2xl font-bold text-primary">
+                <span className="text-3xl font-black text-cyber">
                   {formatPrice(product.price, product.currency)}
                 </span>
-                <p className="text-xs text-muted-foreground">
-                  Warranty: {product.warranty}
+                <p className="text-xs text-primary font-bold">
+                  Neural Warranty: {product.warranty}
                 </p>
               </div>
             </div>
@@ -86,25 +88,25 @@ const ProductCard: React.FC<ProductCardProps> = ({
         </div>
       </CardContent>
 
-      <CardFooter className="p-4 pt-0 space-x-2">
+      <CardFooter className="p-6 pt-0 space-x-3">
         <Button
-          variant="outline"
+          variant="neon"
           size="sm"
           className="flex-1"
           onClick={() => onViewDetails?.(product.id)}
         >
           <Eye className="h-4 w-4 mr-1" />
-          View Details
+          Neural Scan
         </Button>
         <Button
-          variant="cart"
+          variant="cyber"
           size="sm"
           className="flex-1"
           onClick={() => onAddToCart?.(product.id)}
           disabled={!product.inStock}
         >
           <ShoppingCart className="h-4 w-4 mr-1" />
-          Add to Cart
+          Acquire Tech
         </Button>
       </CardFooter>
     </Card>
